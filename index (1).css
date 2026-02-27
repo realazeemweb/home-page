@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Top Bar */
+.top-bar {
+  background: #76d400;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Header */
+header {
+  background: white;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 5%;
+  background: #fff;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 8px;
+}
+
+.hero-content h1 {
+  margin: 15px 0;
+  font-size: 28px;
+}
+
+.hero-buttons button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: black;
+  color: white;
+  border: none;
+}
+
+.btn-outline {
+  background: white;
+  border: 1px solid black;
+}
+
+/* Categories */
+.categories {
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.category-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.category img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+/* Products */
+.products {
+  padding: 50px 5%;
+  background: #fff;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Image Strip */
+.image-strip {
+  display: flex;
+  gap: 20px;
+  padding: 50px 5%;
+}
+
+.image-strip img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-strip {
+    flex-direction: column;
+  }
+}
